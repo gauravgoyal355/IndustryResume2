@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndustryResume - Turn Your Academic CV Into an Industry-Ready Resume</title>
+    <meta name="description" content="IndustryResume helps STEM PhDs and postdocs craft compelling resumes that hiring managers actually want to read. Get the free resume kit.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CSS -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: 210 100% 55%;
+            --primary-dark: 220 100% 60%;
+            --gray-50: 249 250 251;
+            --gray-100: 243 244 246;
+            --gray-200: 229 231 235;
+            --gray-300: 209 213 219;
+            --gray-600: 75 85 99;
+            --gray-700: 55 65 81;
+            --gray-900: 17 24 39;
+            --green-500: 34 197 94;
+            --green-600: 22 163 74;
+            --green-800: 22 101 52;
+            --blue-50: 239 246 255;
+            --blue-500: 59 130 246;
+            --emerald-50: 236 253 245;
+            --emerald-500: 16 185 129;
+            --purple-50: 250 245 255;
+            --purple-500: 168 85 247;
+            --red-500: 239 68 68;
+            --orange-400: 251 146 60;
+            --yellow-400: 250 204 21;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: hsl(var(--gray-900));
+            background-color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            text-decoration: none;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+            color: white;
+            padding: 0.75rem 1.5rem;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, hsl(210 100% 50%), hsl(220 100% 55%));
+            transform: scale(1.05);
+        }
+
+        .btn-outline {
+            background: white;
+            color: hsl(var(--gray-700));
+            border: 1px solid hsl(var(--gray-200));
+            padding: 0.5rem 1rem;
+        }
+
+        .btn-outline:hover {
+            background: hsl(var(--gray-50));
+            border-color: hsl(210 100% 55% / 0.3);
+        }
+
+        .btn-link {
+            background: none;
+            border: none;
+            color: hsl(var(--gray-600));
+            text-decoration: underline;
+            padding: 0;
+        }
+
+        .input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid hsl(var(--gray-200));
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .input:focus {
+            outline: none;
+            border-color: hsl(var(--primary));
+            box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+        }
+
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1);
+            transition: all 0.5s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            transform: scale(1.05);
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+            color: white;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, hsl(210 100% 97%), white, hsl(220 100% 97%));
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            display: inline-block;
+        }
+
+        .icon-lg {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .icon-xl {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        /* Header */
+        .header {
+            padding: 1.5rem 0;
+            background: white;
+            border-bottom: 1px solid hsl(var(--gray-200) / 0.2);
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo-subtext {
+            font-size: 0.75rem;
+            color: hsl(var(--gray-600));
+        }
+
+        .nav {
+            display: none;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0 6rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: hsl(var(--gray-600));
+            margin-bottom: 3rem;
+            max-width: 48rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            border: 1px solid hsl(var(--gray-100));
+            max-width: 32rem;
+            margin: 0 auto;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-row .input {
+            flex: 1;
+            height: 3rem;
+        }
+
+        .form-row .btn {
+            height: 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .success-state {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .success-icon {
+            width: 4rem;
+            height: 4rem;
+            background: hsl(var(--green-500) / 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: hsl(var(--gray-600));
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 48rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .grid-4 {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        /* Benefits Cards */
+        .benefit-card {
+            padding: 2rem;
+            text-align: center;
+            border: none;
+        }
+
+        .benefit-card.blue {
+            background: linear-gradient(135deg, hsl(var(--blue-50)), hsl(239 246 255));
+        }
+
+        .benefit-card.emerald {
+            background: linear-gradient(135deg, hsl(var(--emerald-50)), hsl(236 253 245));
+        }
+
+        .benefit-card.purple {
+            background: linear-gradient(135deg, hsl(var(--purple-50)), hsl(250 245 255));
+        }
+
+        .benefit-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover .benefit-icon {
+            transform: scale(1.1);
+        }
+
+        .benefit-icon.blue {
+            background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+        }
+
+        .benefit-icon.emerald {
+            background: linear-gradient(135deg, hsl(var(--emerald-500)), hsl(22 163 74));
+        }
+
+        .benefit-icon.purple {
+            background: linear-gradient(135deg, hsl(var(--purple-500)), hsl(147 51 234));
+        }
+
+        .benefit-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-description {
+            color: hsl(var(--gray-600));
+        }
+
+        /* Lead Magnet Section */
+        .lead-magnet {
+            background: linear-gradient(135deg, hsl(var(--gray-50)), hsl(var(--blue-50)));
+        }
+
+        .lead-magnet-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            border: 1px solid hsl(var(--gray-200));
+            box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            margin-bottom: 2rem;
+        }
+
+        /* Article Cards */
+        .article-card {
+            padding: 1.5rem;
+            border: 1px solid hsl(var(--gray-200));
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            border-color: hsl(var(--primary) / 0.3);
+            box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1);
+        }
+
+        .article-icon {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .article-icon.blue {
+            background: linear-gradient(135deg, hsl(var(--blue-500)), hsl(99 102 241));
+        }
+
+        .article-icon.red {
+            background: linear-gradient(135deg, hsl(var(--red-500)), hsl(236 72 153));
+        }
+
+        .article-icon.green {
+            background: linear-gradient(135deg, hsl(var(--green-500)), hsl(var(--emerald-500)));
+        }
+
+        .article-icon.purple {
+            background: linear-gradient(135deg, hsl(var(--purple-500)), hsl(147 51 234));
+        }
+
+        .article-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-description {
+            color: hsl(var(--gray-600));
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: hsl(var(--gray-50));
+            border-top: 1px solid hsl(var(--gray-200));
+            padding: 3rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section {
+            text-align: center;
+        }
+
+        .footer-section h4 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-form .input {
+            height: 2.5rem;
+            font-size: 0.875rem;
+        }
+
+        .footer-form .btn {
+            width: 100%;
+            height: 2.5rem;
+            font-size: 0.875rem;
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid hsl(var(--gray-200));
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, hsl(var(--primary)), hsl(250 100% 62%), hsl(var(--primary-dark)));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at center, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.1;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .cta-form {
+            max-width: 32rem;
+            margin: 0 auto;
+        }
+
+        .cta-form .input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            height: 3.5rem;
+            font-size: 1.125rem;
+        }
+
+        .cta-form .input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .cta-form .input:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .cta-form .btn {
+            background: white;
+            color: hsl(var(--primary));
+            height: 3.5rem;
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
+
+        .cta-form .btn:hover {
+            background: hsl(var(--gray-100));
+        }
+
+        .cta-success {
+            max-width: 32rem;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        /* Responsive */
+        @media (min-width: 640px) {
+            .form-row {
+                flex-direction: row;
+            }
+
+            .nav {
+                display: flex;
+            }
+
+            .footer-section {
+                text-align: left;
+            }
+
+            .footer-section:last-child {
+                text-align: right;
+            }
+
+            .footer-form {
+                flex-direction: row;
+            }
+
+            .footer-form .input {
+                flex: 1;
+            }
+
+            .footer-form .btn {
+                width: auto;
+            }
+        }
+
+        @media (max-width: 639px) {
+            .form-row {
+                flex-direction: column;
+            }
+
+            .cta-form .form-row {
+                flex-direction: column;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="brain" class="icon" style="color: white;"></i>
+                </div>
+                <div>
+                    <div class="logo-text text-gradient">IndustryResume</div>
+                    <div class="logo-subtext">PhD to Industry Success</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#resources" class="btn-link">Resume Best Practices</a>
+                <a href="#contact" class="btn btn-outline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero gradient-bg">
+        <div class="container">
+            <h1>
+                Turn Your Academic CV Into an 
+                <span class="text-gradient">Industry-Ready Resume</span>
+            </h1>
+            
+            <p>
+                IndustryResume helps STEM PhDs and postdocs craft compelling resumes that hiring managers actually want to read.
+            </p>
+            
+            <div class="hero-form" id="heroForm">
+                <form id="emailForm1" class="email-form">
+                    <div class="form-row">
+                        <input 
+                            type="email" 
+                            class="input" 
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <button type="submit" class="btn btn-primary">
+                            Get the Free Resume Kit
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="success-state hidden" id="heroSuccess">
+                    <div class="success-icon">
+                        <i data-lucide="check-circle" class="icon-lg" style="color: hsl(var(--green-600));"></i>
+                    </div>
+                    <h3 style="font-size: 1.25rem; font-weight: 600; color: hsl(var(--green-800)); margin-bottom: 0.5rem;">Success!</h3>
+                    <p style="color: hsl(var(--gray-600));">Check your email for the free resume kit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why STEM PhDs Choose IndustryResume</h2>
+            <p class="section-subtitle">
+                We understand the unique challenges of transitioning from academia to industry
+            </p>
+            
+            <div class="grid grid-3">
+                <div class="card benefit-card blue">
+                    <div class="benefit-icon blue">
+                        <i data-lucide="rocket" class="icon-lg" style="color: white;"></i>
+                    </div>
+                    <h3 class="benefit-title">🚀 Translate your research into results</h3>
+                    <p class="benefit-description">
+                        We help you reframe academic achievements in language industry employers understand.
+                    </p>
+                </div>
+                
+                <div class="card benefit-card emerald">
+                    <div class="benefit-icon emerald">
+                        <i data-lucide="brain" class="icon-lg" style="color: white;"></i>
+                    </div>
+                    <h3 class="benefit-title">🧠 Built for STEM, not sales</h3>
+                    <p class="benefit-description">
+                        No fluff, no buzzwords. Just effective resumes that showcase your value.
+                    </p>
+                </div>
+                
+                <div class="card benefit-card purple">
+                    <div class="benefit-icon purple">
+                        <i data-lucide="check-circle" class="icon-lg" style="color: white;"></i>
+                    </div>
+                    <h3 class="benefit-title">✅ Backed by hiring managers</h3>
+                    <p class="benefit-description">
+                        Crafted based on insights from recruiters who hire STEM talent.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Magnet Section -->
+    <section class="section lead-magnet">
+        <div class="container">
+            <div style="text-align: center; max-width: 64rem; margin: 0 auto;">
+                <div class="lead-magnet-badge">
+                    <i data-lucide="download" class="icon" style="color: hsl(var(--primary));"></i>
+                    <span style="font-size: 0.875rem; font-weight: 500; color: hsl(var(--gray-700));">Free PDF Guide</span>
+                </div>
+                
+                <h2 class="section-title">
+                    10 Resume Mistakes STEM PhDs Make 
+                    <br>
+                    <span class="text-gradient">(and How to Fix Them)</span>
+                </h2>
+                
+                <p class="section-subtitle">
+                    Don't let small mistakes sabotage your industry job hunt. This free guide shows you how to build a resume that gets noticed.
+                </p>
+                
+                <div class="hero-form" id="leadMagnetForm">
+                    <form id="emailForm2" class="email-form">
+                        <div class="form-row">
+                            <input 
+                                type="email" 
+                                class="input" 
+                                placeholder="Enter your email address" 
+                                required
+                            >
+                            <button type="submit" class="btn btn-primary">
+                                Download Free Guide
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="success-state hidden" id="leadMagnetSuccess">
+                        <div class="success-icon">
+                            <i data-lucide="check-circle" class="icon-lg" style="color: hsl(var(--green-600));"></i>
+                        </div>
+                        <h3 style="font-size: 1.25rem; font-weight: 600; color: hsl(var(--green-800)); margin-bottom: 0.5rem;">Guide Sent!</h3>
+                        <p style="color: hsl(var(--gray-600));">Check your email for the free PDF guide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Article/Resources Section -->
+    <section class="section" id="resources">
+        <div class="container">
+            <h2 class="section-title">Resume Best Practices for STEM PhDs</h2>
+            <p class="section-subtitle">
+                Expert insights and practical tips to help you craft winning resumes
+            </p>
+            
+            <div class="grid grid-4">
+                <div class="card article-card">
+                    <div class="article-icon blue">
+                        <i data-lucide="file-text" class="icon" style="color: white;"></i>
+                    </div>
+                    <h3 class="article-title">Academic CV vs. Industry Resume</h3>
+                    <p class="article-description">
+                        Learn the key differences and when to use each format.
+                    </p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">
+                        Read More <i data-lucide="arrow-right" class="icon" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+                
+                <div class="card article-card">
+                    <div class="article-icon red">
+                        <i data-lucide="target" class="icon" style="color: white;"></i>
+                    </div>
+                    <h3 class="article-title">Top Resume Mistakes STEM PhDs Make</h3>
+                    <p class="article-description">
+                        Avoid these common pitfalls that hurt your chances.
+                    </p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">
+                        Read More <i data-lucide="arrow-right" class="icon" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+                
+                <div class="card article-card">
+                    <div class="article-icon green">
+                        <i data-lucide="trending-up" class="icon" style="color: white;"></i>
+                    </div>
+                    <h3 class="article-title">Translating Your Research Skills</h3>
+                    <p class="article-description">
+                        Turn academic achievements into industry value.
+                    </p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">
+                        Read More <i data-lucide="arrow-right" class="icon" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+                
+                <div class="card article-card">
+                    <div class="article-icon purple">
+                        <i data-lucide="lightbulb" class="icon" style="color: white;"></i>
+                    </div>
+                    <h3 class="article-title">ATS Optimization for STEM Jobs</h3>
+                    <p class="article-description">
+                        Get past the robots and into human hands.
+                    </p>
+                    <a href="#" class="btn btn-outline" style="width: 100%;">
+                        Read More <i data-lucide="arrow-right" class="icon" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">
+                    Ready to Land Your Dream Industry Job?
+                </h2>
+                <p style="font-size: 1.25rem; margin-bottom: 3rem; opacity: 0.9; max-width: 48rem; margin-left: auto; margin-right: auto;">
+                    Join 500+ PhDs and PostDocs getting early access to IndustryResume.
+                </p>
+                
+                <div id="ctaFormContainer">
+                    <form id="emailForm3" class="cta-form email-form">
+                        <div class="form-row">
+                            <input 
+                                type="email" 
+                                class="input" 
+                                placeholder="Your email address" 
+                                required
+                            >
+                            <button type="submit" class="btn">
+                                Join IndustryResume
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <div class="cta-success hidden" id="ctaSuccess">
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">Welcome to IndustryResume!</h3>
+                        <p style="opacity: 0.9; font-size: 1.125rem;">You'll be first to know when we launch.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="logo" style="justify-content: center;">
+                        <div class="logo-icon">
+                            <i data-lucide="brain" class="icon" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <div class="logo-text text-gradient">IndustryResume</div>
+                            <div class="logo-subtext">PhD to Industry Success</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#resources" class="btn-link">Resume Best Practices</a>
+                </div>
+                
+                <div class="footer-section" id="footerFormSection">
+                    <h4>Get the Free Resume Kit</h4>
+                    <form id="emailForm4" class="footer-form email-form">
+                        <input 
+                            type="email" 
+                            class="input" 
+                            placeholder="Your email address" 
+                            required
+                        >
+                        <button type="submit" class="btn btn-primary">
+                            Get Free Kit
+                        </button>
+                    </form>
+                    
+                    <div class="hidden" id="footerSuccess">
+                        <h4 style="font-weight: 600; color: hsl(var(--green-800)); margin-bottom: 0.5rem;">Thank you!</h4>
+                        <p style="color: hsl(var(--gray-600)); font-size: 0.875rem;">Check your email for the free kit.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p style="font-size: 0.875rem; color: hsl(var(--gray-500)); margin-bottom: 0.5rem;">
+                    © 2024 IndustryResume. Transforming PhD careers, one resume at a time.
+                </p>
+                <div class="footer-links">
+                    <a href="#" class="btn-link" style="font-size: 0.875rem; color: hsl(var(--gray-500));">Privacy Policy</a>
+                    <span style="color: hsl(var(--gray-300));">•</span>
+                    <a href="#" class="btn-link" style="font-size: 0.875rem; color: hsl(var(--gray-500));">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Email form handling
+        let isSubmitted = false;
+
+        function handleEmailSubmit(event, formId, successId) {
+            event.preventDefault();
+            
+            if (isSubmitted) return;
+            
+            const emailInput = event.target.querySelector('input[type="email"]');
+            const email = emailInput.value;
+            
+            // Simulate email submission (replace with your actual email service)
+            console.log('Email submitted:', email);
+            
+            // Show success state
+            isSubmitted = true;
+            showSuccessState(formId, successId);
+            
+            // Reset email input
+            emailInput.value = '';
+            
+            // Hide all forms and show success states for all forms
+            const allForms = ['emailForm1', 'emailForm2', 'emailForm3', 'emailForm4'];
+            const allSuccesses = ['heroSuccess', 'leadMagnetSuccess', 'ctaSuccess', 'footerSuccess'];
+            
+            allForms.forEach((form, index) => {
+                const formElement = document.getElementById(form);
+                const successElement = document.getElementById(allSuccesses[index]);
+                if (formElement && successElement) {
+                    formElement.classList.add('hidden');
+                    successElement.classList.remove('hidden');
+                    successElement.classList.add('fade-in');
+                }
+            });
+
+            // Special handling for footer
+            const footerFormSection = document.getElementById('footerFormSection');
+            if (footerFormSection) {
+                footerFormSection.querySelector('h4').textContent = 'Thank you!';
+            }
+        }
+
+        function showSuccessState(formId, successId) {
+            const form = document.getElementById(formId);
+            const success = document.getElementById(successId);
+            
+            if (form && success) {
+                form.classList.add('hidden');
+                success.classList.remove('hidden');
+                success.classList.add('fade-in');
+            }
+        }
+
+        // Add event listeners to all email forms
+        document.getElementById('emailForm1').addEventListener('submit', (e) => handleEmailSubmit(e, 'emailForm1', 'heroSuccess'));
+        document.getElementById('emailForm2').addEventListener('submit', (e) => handleEmailSubmit(e, 'emailForm2', 'leadMagnetSuccess'));
+        document.getElementById('emailForm3').addEventListener('submit', (e) => handleEmailSubmit(e, 'emailForm3', 'ctaSuccess'));
+        document.getElementById('emailForm4').addEventListener('submit', (e) => handleEmailSubmit(e, 'emailForm4', 'footerSuccess'));
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add fade-in animation to cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
