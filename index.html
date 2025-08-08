@@ -17,6 +17,9 @@
     <!-- Lucide Icons CSS -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
+    <!-- ConvertKit Script -->
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+    
     <!-- CSS Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -50,27 +53,20 @@
             </p>
             
             <div class="hero-form" id="heroForm">
-                <form id="emailForm1" class="email-form">
-                    <div class="form-row">
-                        <input 
-                            type="email" 
-                            class="input" 
-                            placeholder="Enter your email address" 
-                            required
-                        >
-                        <button type="submit" class="btn btn-primary">
-                            Join Waitlist + Get Free Guide
-                        </button>
+                <form action="https://app.kit.com/forms/8412456/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8412456" data-uid="de9a0b89fc" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Welcome to IndustryResume! Check your email for the free guide.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800">
+                    <div data-style="clean">
+                        <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                        <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                            <div class="formkit-field">
+                                <input class="formkit-input" name="email_address" aria-label="Enter your email" placeholder="Enter your email address" required="" type="email">
+                            </div>
+                            <button data-element="submit" class="formkit-submit formkit-submit">
+                                <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                                <span class="">Join Waitlist + Get Free Guide</span>
+                            </button>
+                        </div>
                     </div>
                 </form>
-                
-                <div class="success-state hidden" id="heroSuccess">
-                    <div class="success-icon">
-                        <i data-lucide="check-circle" class="icon-lg" style="color: hsl(var(--green-600));"></i>
-                    </div>
-                    <h3 style="font-size: 1.25rem; font-weight: 600; color: hsl(var(--green-800)); margin-bottom: 0.5rem;">Welcome to the Waitlist!</h3>
-                    <p style="color: hsl(var(--gray-600));">Check your email for the free guide and waitlist updates.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -137,27 +133,20 @@
                 </p>
                 
                 <div class="hero-form" id="leadMagnetForm">
-                    <form id="emailForm2" class="email-form">
-                        <div class="form-row">
-                            <input 
-                                type="email" 
-                                class="input" 
-                                placeholder="Enter your email address" 
-                                required
-                            >
-                            <button type="submit" class="btn btn-primary">
-                                Download Free Guide
-                            </button>
+                    <form action="https://app.kit.com/forms/8412456/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8412456" data-uid="de9a0b89fc" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Thanks! Check your email for the free guide.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800">
+                        <div data-style="clean">
+                            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                            <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                                <div class="formkit-field">
+                                    <input class="formkit-input" name="email_address" aria-label="Enter your email" placeholder="Enter your email address" required="" type="email">
+                                </div>
+                                <button data-element="submit" class="formkit-submit formkit-submit">
+                                    <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                                    <span class="">Download Free Guide</span>
+                                </button>
+                            </div>
                         </div>
                     </form>
-                    
-                    <div class="success-state hidden" id="leadMagnetSuccess">
-                        <div class="success-icon">
-                            <i data-lucide="check-circle" class="icon-lg" style="color: hsl(var(--green-600));"></i>
-                        </div>
-                        <h3 style="font-size: 1.25rem; font-weight: 600; color: hsl(var(--green-800)); margin-bottom: 0.5rem;">Guide Sent!</h3>
-                        <p style="color: hsl(var(--gray-600));">Check your email for the free PDF guide.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -239,24 +228,20 @@
                 </p>
                 
                 <div id="ctaFormContainer">
-                    <form id="emailForm3" class="cta-form email-form">
-                        <div class="form-row">
-                            <input 
-                                type="email" 
-                                class="input" 
-                                placeholder="Your email address" 
-                                required
-                            >
-                            <button type="submit" class="btn">
-                                Join the Waitlist
-                            </button>
+                    <form action="https://app.kit.com/forms/8412456/subscriptions" class="seva-form formkit-form cta-form" method="post" data-sv-form="8412456" data-uid="de9a0b89fc" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Welcome to IndustryResume! You'll be first to know when we launch.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800">
+                        <div data-style="clean">
+                            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                            <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                                <div class="formkit-field">
+                                    <input class="formkit-input cta-input" name="email_address" aria-label="Your email address" placeholder="Your email address" required="" type="email">
+                                </div>
+                                <button data-element="submit" class="formkit-submit formkit-submit cta-button">
+                                    <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                                    <span class="">Join the Waitlist</span>
+                                </button>
+                            </div>
                         </div>
                     </form>
-                    
-                    <div class="cta-success hidden" id="ctaSuccess">
-                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">Welcome to IndustryResume!</h3>
-                        <p style="opacity: 0.9; font-size: 1.125rem;">You'll be first to know when we launch.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -282,22 +267,20 @@
                 
                 <div class="footer-section" id="footerFormSection">
                     <h4>Get the Free Resume Kit</h4>
-                    <form id="emailForm4" class="footer-form email-form">
-                        <input 
-                            type="email" 
-                            class="input" 
-                            placeholder="Your email address" 
-                            required
-                        >
-                        <button type="submit" class="btn btn-primary">
-                            Get Free Kit
-                        </button>
+                    <form action="https://app.kit.com/forms/8412456/subscriptions" class="seva-form formkit-form footer-form" method="post" data-sv-form="8412456" data-uid="de9a0b89fc" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Thank you! Check your email for the free kit.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800">
+                        <div data-style="clean">
+                            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                            <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                                <div class="formkit-field">
+                                    <input class="formkit-input footer-input" name="email_address" aria-label="Your email address" placeholder="Your email address" required="" type="email">
+                                </div>
+                                <button data-element="submit" class="formkit-submit formkit-submit footer-button">
+                                    <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                                    <span class="">Get Free Kit</span>
+                                </button>
+                            </div>
+                        </div>
                     </form>
-                    
-                    <div class="hidden" id="footerSuccess">
-                        <h4 style="font-weight: 600; color: hsl(var(--green-800)); margin-bottom: 0.5rem;">Thank you!</h4>
-                        <p style="color: hsl(var(--gray-600)); font-size: 0.875rem;">Check your email for the free kit.</p>
-                    </div>
                 </div>
             </div>
             
@@ -317,69 +300,6 @@
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
-
-        // Email form handling
-        let isSubmitted = false;
-
-        function handleEmailSubmit(event, formId, successId) {
-            event.preventDefault();
-            
-            if (isSubmitted) return;
-            
-            const emailInput = event.target.querySelector('input[type="email"]');
-            const email = emailInput.value.trim();
-            
-            if (!email) return;
-            
-            // Simulate form submission
-            const submitBtn = event.target.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            
-            // Disable form and show loading state
-            submitBtn.textContent = 'Submitting...';
-            submitBtn.disabled = true;
-            emailInput.disabled = true;
-            
-            // Simulate API call delay
-            setTimeout(() => {
-                isSubmitted = true;
-                
-                // Hide form and show success state
-                document.getElementById(formId).style.display = 'none';
-                document.getElementById(successId).classList.remove('hidden');
-                document.getElementById(successId).classList.add('fade-in');
-                
-                // Store email for analytics/tracking
-                console.log('Email captured:', email);
-                
-                // Re-enable form for other instances
-                setTimeout(() => {
-                    submitBtn.textContent = originalText;
-                    submitBtn.disabled = false;
-                    emailInput.disabled = false;
-                    emailInput.value = '';
-                    isSubmitted = false;
-                }, 2000);
-                
-            }, 1500);
-        }
-
-        // Attach form handlers
-        document.getElementById('emailForm1').addEventListener('submit', (e) => {
-            handleEmailSubmit(e, 'emailForm1', 'heroSuccess');
-        });
-
-        document.getElementById('emailForm2').addEventListener('submit', (e) => {
-            handleEmailSubmit(e, 'emailForm2', 'leadMagnetSuccess');
-        });
-
-        document.getElementById('emailForm3').addEventListener('submit', (e) => {
-            handleEmailSubmit(e, 'emailForm3', 'ctaSuccess');
-        });
-
-        document.getElementById('emailForm4').addEventListener('submit', (e) => {
-            handleEmailSubmit(e, 'emailForm4', 'footerSuccess');
-        });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
