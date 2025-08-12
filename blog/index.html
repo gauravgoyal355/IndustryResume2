@@ -1,0 +1,127 @@
+---
+layout: default
+title: "Resume Best Practices for STEM PhDs"
+description: "Expert insights and practical tips to help STEM PhDs and postdocs craft winning resumes for industry careers"
+---
+
+<section class="section">
+    <div class="container">
+        <div style="text-align: center; max-width: 48rem; margin: 0 auto 4rem;">
+            <h1 class="section-title">Resume Best Practices for STEM PhDs</h1>
+            <p class="section-subtitle">
+                Expert insights and practical tips to help you craft winning resumes for your industry transition
+            </p>
+        </div>
+        
+        <div class="grid grid-3">
+            {% for post in site.posts %}
+            <article class="card article-card">
+                {% assign icons = "file-text,target,trending-up,lightbulb,brain,rocket,check-circle,users" | split: "," %}
+                {% assign icon = icons[forloop.index0] | default: "file-text" %}
+                {% assign colors = "blue,red,green,purple,blue,emerald,green,purple" | split: "," %}
+                {% assign color = colors[forloop.index0] | default: "blue" %}
+                
+                <div class="article-icon {{ color }}">
+                    <i data-lucide="{{ icon }}" class="icon" style="color: white;"></i>
+                </div>
+                
+                <h3 class="article-title">
+                    <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
+                        {{ post.title }}
+                    </a>
+                </h3>
+                
+                <p class="article-description">
+                    {{ post.excerpt | strip_html | truncate: 120 }}
+                </p>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; margin-bottom: 1rem;">
+                    <time style="font-size: 0.875rem; color: hsl(var(--gray-600));">
+                        {{ post.date | date: "%B %d, %Y" }}
+                    </time>
+                    {% if post.reading_time %}
+                    <span style="font-size: 0.875rem; color: hsl(var(--gray-600));">
+                        {{ post.reading_time }} min read
+                    </span>
+                    {% endif %}
+                </div>
+                
+                <a href="{{ post.url | relative_url }}" class="btn btn-outline" style="width: 100%;">
+                    Read More <i data-lucide="arrow-right" class="icon" style="margin-left: 0.5rem;"></i>
+                </a>
+            </article>
+            {% endfor %}
+            
+            {% if site.posts.size == 0 %}
+            <!-- Placeholder articles when no posts exist -->
+            <article class="card article-card">
+                <div class="article-icon blue">
+                    <i data-lucide="file-text" class="icon" style="color: white;"></i>
+                </div>
+                <h3 class="article-title">Academic CV vs. Industry Resume</h3>
+                <p class="article-description">
+                    Learn the key differences and when to use each format for maximum impact.
+                </p>
+                <a href="#" class="btn btn-outline" style="width: 100%;">
+                    Coming Soon <i data-lucide="arrow-right" class="icon" style="margin-left: 0.5rem;"></i>
+                </a>
+            </article>
+            
+            <article class="card article-card">
+                <div class="article-icon red">
+                    <i data-lucide="target" class="icon" style="color: white;"></i>
+                </div>
+                <h3 class="article-title">Top Resume Mistakes STEM PhDs Make</h3>
+                <p class="article-description">
+                    Avoid these common pitfalls that hurt your chances of landing interviews.
+                </p>
+                <a href="#" class="btn btn-outline" style="width: 100%;">
+                    Coming Soon <i data-lucide="arrow-right" class="icon" style="margin-left: 0.5rem;"></i>
+                </a>
+            </article>
+            
+            <article class="card article-card">
+                <div class="article-icon green">
+                    <i data-lucide="trending-up" class="icon" style="color: white;"></i>
+                </div>
+                <h3 class="article-title">Translating Your Research Skills</h3>
+                <p class="article-description">
+                    Turn academic achievements into industry value propositions.
+                </p>
+                <a href="#" class="btn btn-outline" style="width: 100%;">
+                    Coming Soon <i data-lucide="arrow-right" class="icon" style="margin-left: 0.5rem;"></i>
+                </a>
+            </article>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter CTA -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; margin-bottom: 1.5rem; line-height: 1.2;">
+                Stay Updated with Resume Tips
+            </h2>
+            <p style="font-size: 1.25rem; margin-bottom: 3rem; opacity: 0.9; max-width: 48rem; margin-left: auto; margin-right: auto;">
+                Get the latest insights on resume writing, job search strategies, and career transitions delivered to your inbox.
+            </p>
+            
+            <form action="https://app.kit.com/forms/8412456/subscriptions" class="seva-form formkit-form cta-form" method="post" data-sv-form="8412456" data-uid="de9a0b89fc" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Welcome! You'll get the latest tips and early access to IndustryResume.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}" min-width="400 500 600 700 800">
+                <div data-style="clean">
+                    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                    <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                        <div class="formkit-field">
+                            <input class="formkit-input cta-input" name="email_address" aria-label="Your email address" placeholder="Your email address" required="" type="email">
+                        </div>
+                        <button data-element="submit" class="formkit-submit formkit-submit cta-button">
+                            <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                            <span class="">Subscribe to Updates</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

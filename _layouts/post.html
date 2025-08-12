@@ -1,0 +1,146 @@
+---
+layout: default
+---
+
+<article class="section" style="padding-top: 2rem;">
+    <div class="container">
+        <div style="max-width: 48rem; margin: 0 auto;">
+            <!-- Breadcrumb -->
+            <nav style="margin-bottom: 2rem;">
+                <a href="{{ '/' | relative_url }}" class="btn-link" style="font-size: 0.875rem;">Home</a>
+                <span style="color: hsl(var(--gray-300)); margin: 0 0.5rem;">/</span>
+                <a href="{{ '/blog/' | relative_url }}" class="btn-link" style="font-size: 0.875rem;">Blog</a>
+                <span style="color: hsl(var(--gray-300)); margin: 0 0.5rem;">/</span>
+                <span style="color: hsl(var(--gray-600)); font-size: 0.875rem;">{{ page.title }}</span>
+            </nav>
+
+            <!-- Article Header -->
+            <header style="margin-bottom: 3rem; text-align: center;">
+                {% if page.category %}
+                <div class="badge" style="margin-bottom: 1rem;">
+                    {{ page.category }}
+                </div>
+                {% endif %}
+                
+                <h1 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.5rem;">
+                    {{ page.title }}
+                </h1>
+                
+                {% if page.excerpt %}
+                <p style="font-size: 1.25rem; color: hsl(var(--gray-600)); margin-bottom: 2rem;">
+                    {{ page.excerpt | strip_html }}
+                </p>
+                {% endif %}
+                
+                <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; font-size: 0.875rem; color: hsl(var(--gray-600));">
+                    <span>By {{ page.author | default: site.author }}</span>
+                    <span>•</span>
+                    <time datetime="{{ page.date | date_to_xmlschema }}">
+                        {{ page.date | date: "%B %d, %Y" }}
+                    </time>
+                    {% if page.reading_time %}
+                    <span>•</span>
+                    <span>{{ page.reading_time }} min read</span>
+                    {% endif %}
+                </div>
+            </header>
+
+            <!-- Article Content -->
+            <div class="article-content" style="line-height: 1.7; font-size: 1.125rem;">
+                {{ content }}
+            </div>
+
+            <!-- Article Footer -->
+            <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid hsl(var(--gray-200));">
+                <!-- Tags -->
+                {% if page.tags and page.tags.size > 0 %}
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: hsl(var(--gray-600)); margin-bottom: 0.75rem;">Tags</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        {% for tag in page.tags %}
+                        <span style="background: hsl(var(--gray-100)); color: hsl(var(--gray-700)); padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.875rem;">
+                            {{ tag }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- CTA Section -->
+                <div style="background: linear-gradient(135deg, hsl(var(--gray-50)), hsl(var(--blue-50))); border-radius: 1rem; padding: 2rem; text-align: center; margin: 2rem 0;">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">
+                        Ready to Transform Your Resume?
+                    </h3>
+                    <p style="color: hsl(var(--gray-600)); margin-bottom: 2rem;">
+                        Join our waitlist to get early access to IndustryResume and download our free guide.
+                    </p>
+                    <form action="https://app.kit.com/forms/8412456/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8412456" data-uid="de9a0b89fc" data-format="inline" data-version="5" style="max-width: 24rem; margin: 0 auto;">
+                        <div data-style="clean">
+                            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                            <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
+                                <div class="formkit-field">
+                                    <input class="formkit-input" name="email_address" aria-label="Enter your email" placeholder="Enter your email address" required="" type="email">
+                                </div>
+                                <button data-element="submit" class="formkit-submit formkit-submit">
+                                    <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                                    <span class="">Get Free Guide</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Social Sharing -->
+                <div style="text-align: center; margin-top: 2rem;">
+                    <h4 style="font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: hsl(var(--gray-600)); margin-bottom: 1rem;">Share this article</h4>
+                    <div style="display: flex; justify-content: center; gap: 1rem;">
+                        <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" target="_blank" class="btn btn-outline" style="padding: 0.5rem;">
+                            <i data-lucide="twitter" class="icon"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}" target="_blank" class="btn btn-outline" style="padding: 0.5rem;">
+                            <i data-lucide="linkedin" class="icon"></i>
+                        </a>
+                        <a href="mailto:?subject={{ page.title | url_encode }}&body={{ page.url | absolute_url }}" class="btn btn-outline" style="padding: 0.5rem;">
+                            <i data-lucide="mail" class="icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</article>
+
+<!-- Related Articles -->
+{% assign related_posts = site.posts | where_exp: "post", "post.url != page.url" | limit: 3 %}
+{% if related_posts.size > 0 %}
+<section class="section" style="background: hsl(var(--gray-50)); border-top: 1px solid hsl(var(--gray-200));">
+    <div class="container">
+        <h2 class="section-title" style="font-size: 2rem;">Related Articles</h2>
+        <div class="grid grid-3">
+            {% for post in related_posts %}
+            <article class="card article-card">
+                <div class="article-icon blue">
+                    <i data-lucide="file-text" class="icon" style="color: white;"></i>
+                </div>
+                <h3 class="article-title">
+                    <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: inherit;">
+                        {{ post.title }}
+                    </a>
+                </h3>
+                <p class="article-description">
+                    {{ post.excerpt | strip_html | truncate: 120 }}
+                </p>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem;">
+                    <time style="font-size: 0.875rem; color: hsl(var(--gray-600));">
+                        {{ post.date | date: "%b %d, %Y" }}
+                    </time>
+                    <a href="{{ post.url | relative_url }}" class="btn btn-outline" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">
+                        Read More
+                    </a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
