@@ -22,15 +22,15 @@ social:
     - https://linkedin.com/company/industryresume
 
 # Blog settings
-permalink: /IndustryResume2/blog/:title/
+permalink: /blog/:title/
 paginate: 10
-paginate_path: "/IndustryResume2/blog/page:num/"
+paginate_path: "/blog/page:num/"
 
 # Collections
 collections:
   posts:
     output: true
-    permalink: /IndustryResume2/blog/:title/
+    permalink: /blog/:title/
 
 # Defaults
 defaults:
