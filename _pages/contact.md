@@ -55,36 +55,6 @@ permalink: /contact/
                 </div>
             </div>
 
-            <!-- FAQ Section -->
-            <div style="background: hsl(var(--gray-50)); padding: 2rem; border-radius: 1rem; margin-bottom: 3rem;">
-                <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 2rem; text-align: center;">Frequently Asked Questions</h2>
-                
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">When will IndustryResume launch?</h3>
-                    <p style="color: hsl(var(--gray-600));">We're currently in development and plan to launch in early 2025. Join our waitlist to be notified when we're ready!</p>
-                </div>
-
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Is the free resume guide really free?</h3>
-                    <p style="color: hsl(var(--gray-600));">Yes! Our "10 Resume Mistakes STEM PhDs Make" guide is completely free. Just enter your email and we'll send it to you immediately.</p>
-                </div>
-
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">How can I unsubscribe from emails?</h3>
-                    <p style="color: hsl(var(--gray-600));">Every email we send includes an unsubscribe link at the bottom. You can also email us at privacy@industryresume.com to be removed.</p>
-                </div>
-
-                <div style="margin-bottom: 2rem;">
-                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Do you offer resume review services?</h3>
-                    <p style="color: hsl(var(--gray-600));">Not yet, but this is planned for our full launch. Our upcoming platform will include resume analysis and personalized feedback features.</p>
-                </div>
-
-                <div>
-                    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Can I share your articles and resources?</h3>
-                    <p style="color: hsl(var(--gray-600));">Absolutely! Please share our articles on social media or with colleagues. We just ask that you include attribution and don't republish the full content.</p>
-                </div>
-            </div>
-
             <!-- Newsletter CTA -->
             <div style="background: linear-gradient(135deg, hsl(var(--gray-50)), hsl(var(--blue-50))); border-radius: 1rem; padding: 2rem; text-align: center; margin: 2rem 0;">
                 <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">

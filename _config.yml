@@ -1,8 +1,8 @@
 # Site settings
-title: "IndustryResume Blog"
+title: "IndustryResume"
 description: "Expert insights and practical tips for STEM PhDs transitioning to industry careers"
-baseurl: "/IndustryResume2" # the subpath of your site
-url: "https://gauravgoyal355.github.io" # Your GitHub Pages domain
+baseurl: "" # Empty for custom domain
+url: "https://industryresume.com" # Your custom domain
 author: "IndustryResume Team"
 
 # Build settings
