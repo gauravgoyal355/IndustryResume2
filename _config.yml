@@ -1,8 +1,8 @@
 # Site settings
 title: "IndustryResume Blog"
 description: "Expert insights and practical tips for STEM PhDs transitioning to industry careers"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://https://gauravgoyal355.github.io/IndustryResume2/" # Update with your actual domain
+baseurl: "/IndustryResume2" # the subpath of your site
+url: "https://gauravgoyal355.github.io" # Your GitHub Pages domain
 author: "IndustryResume Team"
 
 # Build settings
@@ -22,15 +22,15 @@ social:
     - https://linkedin.com/company/industryresume
 
 # Blog settings
-permalink: /blog/:title/
+permalink: /IndustryResume2/blog/:title/
 paginate: 10
-paginate_path: "/blog/page:num/"
+paginate_path: "/IndustryResume2/blog/page:num/"
 
 # Collections
 collections:
   posts:
     output: true
-    permalink: /blog/:title/
+    permalink: /IndustryResume2/blog/:title/
 
 # Defaults
 defaults:
