@@ -7,7 +7,7 @@ author: "Dr. Marcus Rivera"
 category: "Resume Mistakes"
 tags: ["resume mistakes", "PhD job search", "industry transition", "hiring manager insights"]
 reading_time: 7
-image: "/assets/images/resume-mistakes.jpg"
+image: "/assets/images/resume-mistakes.svg"
 ---
 
 After reviewing thousands of PhD resumes as a hiring manager in tech, I've seen the same mistakes over and over again. These errors cost brilliant scientists their dream jobs—not because they lack qualifications, but because their resumes fail to communicate their value effectively.

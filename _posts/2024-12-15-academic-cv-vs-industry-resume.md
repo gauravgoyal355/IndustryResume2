@@ -7,7 +7,7 @@ author: "Dr. Sarah Chen"
 category: "Resume Writing"
 tags: ["CV conversion", "industry transition", "STEM careers", "resume format"]
 reading_time: 8
-image: "/assets/images/cv-vs-resume.jpg"
+image: "/assets/images/cv-vs-resume.svg"
 ---
 
 Making the transition from academia to industry can feel overwhelming, especially when it comes to your resume. As a STEM PhD, you've spent years perfecting your academic CV, but now you need to learn an entirely different language to communicate your value to industry employers.

@@ -7,7 +7,7 @@ author: "Dr. Lisa Zhang"
 category: "Skills Translation"
 tags: ["transferable skills", "research experience", "PhD value", "industry skills"]
 reading_time: 6
-image: "/assets/images/research-skills-translation.jpg"
+image: "/assets/images/research-skills-translation.svg"
 ---
 
 The biggest challenge STEM PhDs face isn't lacking valuable skills—it's translating those skills into language that industry employers understand and value.
