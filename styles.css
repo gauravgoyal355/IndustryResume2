@@ -988,38 +988,42 @@ body {
 
 /* Privacy Notice Styling */
 .privacy-notice {
-    font-size: 0.875rem;
-    color: hsl(var(--gray-600));
+    font-size: 0.75rem;
+    color: hsl(var(--gray-500));
     text-align: center;
-    margin-top: 1rem;
-    line-height: 1.5;
+    margin-top: 0.75rem;
+    line-height: 1.4;
+    opacity: 0.8;
 }
 
 .privacy-notice a {
-    color: hsl(var(--primary));
+    color: hsl(var(--gray-500));
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
 .privacy-notice a:hover {
-    color: hsl(var(--primary-dark));
+    color: hsl(var(--gray-700));
 }
 
 /* Privacy notice specific styling for different sections */
 .hero-form .privacy-notice {
-    color: hsl(var(--gray-600));
+    color: hsl(var(--gray-500));
+    font-size: 0.75rem;
 }
 
 .lead-magnet .privacy-notice {
-    color: hsl(var(--gray-600));
+    color: hsl(var(--gray-500));
+    font-size: 0.75rem;
 }
 
 .cta-form .privacy-notice {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
 }
 
 .cta-form .privacy-notice a {
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: underline;
 }
 
