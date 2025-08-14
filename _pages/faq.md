@@ -234,7 +234,7 @@ permalink: /faq/
                     <p style="color: hsl(var(--gray-600)); margin-bottom: 2rem;">
                         Get career tips, resume advice, and be first to know when IndustryResume launches.
                     </p>
-                    <form action="https://app.kit.com/forms/8412456/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8412456" data-uid="de9a0b89fc" data-format="inline" data-version="5" style="max-width: 24rem; margin: 0 auto;">
+                    <form action="https://app.kit.com/forms/8412456/subscriptions" class="seva-form formkit-form" method="post" data-sv-form="8412456" data-uid="de9a0b89fc" data-format="inline" data-version="5" data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Welcome! You're now part of our community.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;powered_by&quot;:{&quot;show&quot;:false,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;}},&quot;version&quot;:&quot;5&quot;}" style="max-width: 24rem; margin: 0 auto;">
                         <div data-style="clean">
                             <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
                             <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
@@ -248,6 +248,9 @@ permalink: /faq/
                             </div>
                         </div>
                     </form>
+                    <p class="privacy-notice" style="margin-top: 0.75rem;">
+                        By joining, you'll get your free resume guide and occasional career tips. Unsubscribe anytime. <a href="{{ '/privacy-policy/' | relative_url }}">See our Privacy Policy</a>.
+                    </p>
                 </div>
             </div>
         </div>

@@ -985,3 +985,44 @@ body {
 .article-nav a:hover {
     color: hsl(var(--primary-dark));
 }
+
+/* Privacy Notice Styling */
+.privacy-notice {
+    font-size: 0.875rem;
+    color: hsl(var(--gray-600));
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.privacy-notice a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.privacy-notice a:hover {
+    color: hsl(var(--primary-dark));
+}
+
+/* Privacy notice specific styling for different sections */
+.hero-form .privacy-notice {
+    color: hsl(var(--gray-600));
+}
+
+.lead-magnet .privacy-notice {
+    color: hsl(var(--gray-600));
+}
+
+.cta-form .privacy-notice {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-form .privacy-notice a {
+    color: white;
+    text-decoration: underline;
+}
+
+.cta-form .privacy-notice a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
