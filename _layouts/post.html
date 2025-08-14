@@ -32,6 +32,13 @@ layout: default
                 </p>
                 {% endif %}
                 
+                <!-- Featured Image -->
+                {% if page.image %}
+                <div style="margin: 2rem 0;">
+                    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="max-width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 10px 25px -5px rgb(0 0 0 / 0.1);">
+                </div>
+                {% endif %}
+                
                 <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; font-size: 0.875rem; color: hsl(var(--gray-600));">
                     <span>By {{ page.author | default: site.author }}</span>
                     <span>•</span>
