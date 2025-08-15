@@ -21,162 +21,115 @@ permalink: /privacy-policy/
                     Privacy Policy
                 </h1>
                 <p style="font-size: 1.125rem; color: hsl(var(--gray-600));">
-                    Last updated: December 15, 2024
+                    Last updated: August 15, 2025
                 </p>
             </header>
 
             <!-- Content -->
             <div class="article-content">
-                <p>At IndustryResume, we are committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+                <p>IndustryResume ("we," "us," "our") respects your privacy. This Policy explains what we collect, why we collect it, how we use and share it, and the choices and rights you have. It applies to our website and services that link to this Policy.</p>
 
-                <h2>1. Information We Collect</h2>
+                <h2>1) What we collect</h2>
 
-                <h3>1.1 Personal Information You Provide</h3>
-                <p>We collect information you voluntarily provide to us, including:</p>
+                <h3>Information you provide</h3>
                 <ul>
-                    <li><strong>Email address</strong> - When you sign up for our newsletter, waitlist, or download our free resources</li>
-                    <li><strong>Name</strong> - If you choose to provide it when contacting us</li>
-                    <li><strong>Communication content</strong> - Messages you send us through contact forms or email</li>
+                    <li>Email address when you join the waitlist/newsletter or request resources (e.g., our PDF guide).</li>
+                    <li>Name and any details you share when contacting us.</li>
+                    <li>Support messages you send via forms or email.</li>
                 </ul>
 
-                <h3>1.2 Automatically Collected Information</h3>
-                <p>When you visit our website, we automatically collect certain information:</p>
+                <h3>Information collected automatically</h3>
                 <ul>
-                    <li><strong>Usage data</strong> - Pages visited, time spent, referring website</li>
-                    <li><strong>Device information</strong> - Browser type, operating system, screen resolution</li>
-                    <li><strong>IP address</strong> - For analytics and security purposes</li>
-                    <li><strong>Cookies and similar technologies</strong> - As described in our Cookie Policy below</li>
+                    <li>Usage data (pages visited, links clicked, time on site).</li>
+                    <li>Device/technical data (browser, OS, screen size, IP address).</li>
+                    <li>Cookies and similar tech for essential site functions and analytics (see Cookies below).</li>
                 </ul>
 
-                <h2>2. How We Use Your Information</h2>
+                <p>We don't intentionally collect sensitive personal data.</p>
 
-                <p>We use the collected information for the following purposes:</p>
+                <h2>2) How we use your information</h2>
+
                 <ul>
-                    <li><strong>Service delivery</strong> - To provide our newsletter, free resources, and updates</li>
-                    <li><strong>Communication</strong> - To respond to your inquiries and provide customer support</li>
-                    <li><strong>Product development</strong> - To improve our website and develop new features</li>
-                    <li><strong>Marketing</strong> - To send you relevant content and updates (with your consent)</li>
-                    <li><strong>Analytics</strong> - To understand how our website is used and improve user experience</li>
-                    <li><strong>Legal compliance</strong> - To comply with applicable laws and regulations</li>
+                    <li>To deliver what you requested (emails, resources, updates).</li>
+                    <li>To communicate (respond to questions, provide support).</li>
+                    <li>To improve our site and services (analytics, troubleshooting, feature development).</li>
+                    <li>To send relevant content (tips, product updates, limited promotions). You can unsubscribe anytime.</li>
+                    <li>To meet legal, security, and compliance obligations.</li>
                 </ul>
 
-                <h2>3. Legal Basis for Processing (GDPR)</h2>
+                <h2>3) Legal bases (GDPR/UK GDPR)</h2>
 
-                <p>Under the General Data Protection Regulation (GDPR), we process your personal data based on:</p>
+                <p>We process personal data on the following bases:</p>
                 <ul>
-                    <li><strong>Consent</strong> - When you sign up for our newsletter or download resources</li>
-                    <li><strong>Legitimate interests</strong> - For website analytics and improvement</li>
-                    <li><strong>Contract performance</strong> - To provide services you've requested</li>
-                    <li><strong>Legal obligation</strong> - To comply with applicable laws</li>
+                    <li><strong>Consent</strong> (e.g., when you subscribe to emails or download resources).</li>
+                    <li><strong>Legitimate interests</strong> (e.g., website analytics, improving services).</li>
+                    <li><strong>Contract</strong> (providing requested resources/services).</li>
+                    <li><strong>Legal obligation</strong> (where we're required to keep certain records).</li>
                 </ul>
 
-                <h2>4. How We Share Your Information</h2>
+                <p>You can withdraw consent at any time by unsubscribing or contacting us.</p>
 
-                <h3>4.1 Service Providers</h3>
-                <p>We may share your information with trusted third-party service providers:</p>
+                <h2>4) Cookies & analytics</h2>
+
                 <ul>
-                    <li><strong>ConvertKit</strong> - Email marketing platform for newsletter delivery</li>
-                    <li><strong>Google Analytics</strong> - Website analytics (anonymized data)</li>
-                    <li><strong>GitHub Pages</strong> - Website hosting service</li>
+                    <li><strong>Essential cookies</strong> run the site (security, load balancing, preferences).</li>
+                    <li><strong>Analytics cookies</strong> help us understand how the site is used (e.g., Google Analytics/GA4).</li>
                 </ul>
 
-                <h3>4.2 Legal Requirements</h3>
-                <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities.</p>
+                <p>You can control cookies through your browser settings and Google's opt-out tools. Blocking some cookies may affect site functionality.</p>
 
-                <h3>4.3 Business Transfers</h3>
-                <p>In the event of a merger, acquisition, or asset sale, your information may be transferred as part of that transaction.</p>
+                <h2>5) Who we share information with (processors)</h2>
 
-                <h2>5. Data Retention</h2>
-
-                <p>We retain your personal information for as long as necessary to:</p>
+                <p>We use trusted providers to operate our services. Typical vendors include:</p>
                 <ul>
-                    <li>Provide our services to you</li>
-                    <li>Comply with legal obligations</li>
-                    <li>Resolve disputes and enforce agreements</li>
+                    <li><strong>ConvertKit</strong> – email delivery and subscriber management</li>
+                    <li><strong>Google Analytics (GA4)</strong> – usage analytics</li>
+                    <li><strong>GitHub Pages</strong> – website hosting</li>
                 </ul>
 
-                <p><strong>Email subscribers:</strong> We retain your email address until you unsubscribe or request deletion.</p>
-                <p><strong>Analytics data:</strong> Anonymized analytics data is retained for up to 26 months.</p>
+                <p>We share only what's necessary for them to perform their services for us, under contracts that limit how they use your data. We don't sell or rent your personal data.</p>
 
-                <h2>6. Your Rights (GDPR & CCPA)</h2>
+                <h2>6) International transfers</h2>
 
-                <p>You have the following rights regarding your personal data:</p>
+                <p>Your data may be processed outside your country. Where required, we use appropriate safeguards (e.g., Standard Contractual Clauses) to protect your information during cross-border transfers.</p>
+
+                <h2>7) Data retention</h2>
+
+                <p>We keep personal data only as long as needed for the purposes above:</p>
                 <ul>
-                    <li><strong>Access</strong> - Request a copy of your personal data</li>
-                    <li><strong>Rectification</strong> - Request correction of inaccurate data</li>
-                    <li><strong>Erasure</strong> - Request deletion of your personal data</li>
-                    <li><strong>Portability</strong> - Request transfer of your data</li>
-                    <li><strong>Restriction</strong> - Request limitation of processing</li>
-                    <li><strong>Objection</strong> - Object to processing based on legitimate interests</li>
-                    <li><strong>Withdraw consent</strong> - Unsubscribe from marketing communications</li>
+                    <li><strong>Email subscribers:</strong> until you unsubscribe or request deletion.</li>
+                    <li><strong>Support messages:</strong> for as long as needed to handle your request.</li>
+                    <li><strong>Analytics data:</strong> kept for operational analysis and then aggregated or deleted.</li>
                 </ul>
 
-                <p>To exercise these rights, contact us at: <strong>privacy@industryresume.com</strong></p>
+                <p>We may retain limited information as required by law or to establish/defend legal claims.</p>
 
-                <h2>7. Cookies and Tracking Technologies</h2>
+                <h2>8) Security</h2>
 
-                <h3>7.1 Essential Cookies</h3>
-                <p>We use essential cookies for website functionality and security.</p>
+                <p>We use administrative, technical, and organizational safeguards such as HTTPS encryption, access controls, and periodic reviews. No method of transmission or storage is 100% secure, but we work to protect your information.</p>
 
-                <h3>7.2 Analytics Cookies</h3>
-                <p>We use Google Analytics to understand website usage. You can opt-out using browser settings or Google's opt-out tools.</p>
+                <h2>9) Your rights</h2>
 
-                <h3>7.3 Marketing Cookies</h3>
-                <p>ConvertKit may use cookies to track form submissions and email engagement.</p>
+                <h3>If you're in the EU/UK (GDPR/UK GDPR):</h3>
+                <p>You can request access, correction, deletion, restriction, portability, or object to processing based on legitimate interests. You can also withdraw consent at any time (e.g., unsubscribe).</p>
 
-                <h2>8. International Data Transfers</h2>
+                <h3>If you're in California (CCPA/CPRA):</h3>
+                <p>You have the rights to know the categories of personal information we collect, access and delete your data, correct inaccuracies, and not be discriminated against for exercising your rights. We do not sell or share your personal information for cross-context behavioral advertising.</p>
 
-                <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place:</p>
-                <ul>
-                    <li>Standard Contractual Clauses (SCCs)</li>
-                    <li>Adequacy decisions by the European Commission</li>
-                    <li>Other legally recognized transfer mechanisms</li>
-                </ul>
+                <p>To exercise any rights, email <strong>privacy@industryresume.com</strong>. We may ask for information to verify your identity before fulfilling your request. You also have the right to lodge a complaint with your local data protection authority.</p>
 
-                <h2>9. Data Security</h2>
+                <h2>10) Children's privacy</h2>
 
-                <p>We implement appropriate technical and organizational measures to protect your personal data:</p>
-                <ul>
-                    <li>HTTPS encryption for all data transmission</li>
-                    <li>Secure hosting with GitHub Pages</li>
-                    <li>Regular security assessments</li>
-                    <li>Limited access to personal data</li>
-                </ul>
+                <p>Our services are not intended for children under 16, and we don't knowingly collect their data. If you believe a child provided us information, contact us to delete it.</p>
 
-                <h2>10. Children's Privacy</h2>
+                <h2>11) Changes to this Policy</h2>
 
-                <p>Our services are not intended for children under 16. We do not knowingly collect personal information from children under 16. If you believe we have collected such information, please contact us immediately.</p>
+                <p>We may update this Policy to reflect changes to our practices or legal requirements. If we make material changes, we'll post the updated Policy here and update the "Last updated" date above.</p>
 
-                <h2>11. California Privacy Rights (CCPA)</h2>
+                <h2>12) Contact us</h2>
 
-                <p>California residents have additional rights under the California Consumer Privacy Act (CCPA):</p>
-                <ul>
-                    <li>Right to know what personal information is collected</li>
-                    <li>Right to delete personal information</li>
-                    <li>Right to opt-out of sale (we do not sell personal information)</li>
-                    <li>Right to non-discrimination</li>
-                </ul>
-
-                <h2>12. Contact Information</h2>
-
-                <p>For privacy-related questions or to exercise your rights, contact us:</p>
-                <ul>
-                    <li><strong>Email:</strong> privacy@industryresume.com</li>
-                    <li><strong>Response time:</strong> Within 30 days for GDPR requests, 45 days for CCPA requests</li>
-                </ul>
-
-                <h2>13. Changes to This Privacy Policy</h2>
-
-                <p>We may update this Privacy Policy periodically. We will notify you of any material changes by:</p>
-                <ul>
-                    <li>Posting the updated policy on our website</li>
-                    <li>Updating the "Last updated" date</li>
-                    <li>Sending email notification for significant changes</li>
-                </ul>
-
-                <h2>14. Supervisory Authority</h2>
-
-                <p>If you are in the European Union, you have the right to lodge a complaint with your local data protection supervisory authority if you believe we have not complied with applicable data protection laws.</p>
+                <p>Questions or requests?<br>
+                Email: <strong>privacy@industryresume.com</strong></p>
 
                 <hr style="margin: 3rem 0; border: none; border-top: 1px solid hsl(var(--gray-200));">
 
