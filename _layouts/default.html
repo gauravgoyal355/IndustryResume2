@@ -150,6 +150,51 @@
         // Initialize Lucide icons
         lucide.createIcons();
 
+        // Enhanced ConvertKit form tracking
+        function trackConvertKitFormSubmission(formId, location) {
+            // Send event to Google Analytics
+            gtag('event', 'form_submit', {
+                'form_id': formId,
+                'form_location': location,
+                'event_category': 'engagement',
+                'event_label': 'email_signup'
+            });
+            
+            // Also track as conversion
+            gtag('event', 'generate_lead', {
+                'currency': 'USD',
+                'value': 1.0,
+                'form_location': location
+            });
+        }
+
+        // Track ConvertKit form submissions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Find all ConvertKit forms
+            const convertKitForms = document.querySelectorAll('.formkit-form');
+            
+            convertKitForms.forEach(function(form, index) {
+                const submitButton = form.querySelector('[data-element="submit"]');
+                
+                if (submitButton) {
+                    submitButton.addEventListener('click', function(e) {
+                        // Determine form location
+                        let location = 'unknown';
+                        if (form.closest('#heroForm')) location = 'hero';
+                        else if (form.closest('#leadMagnetForm')) location = 'lead_magnet';
+                        else if (form.closest('#ctaFormContainer')) location = 'cta';
+                        else if (form.closest('.cta-section')) location = 'footer_cta';
+                        else if (form.closest('footer')) location = 'footer';
+                        
+                        // Track the form submission
+                        trackConvertKitFormSubmission('8412456', location);
+                        
+                        console.log('Tracked form submission:', location);
+                    });
+                }
+            });
+        });
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
