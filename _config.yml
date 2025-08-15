@@ -1,6 +1,6 @@
 # Site settings
 title: "IndustryResume"
-description: "Expert insights and practical tips for STEM PhDs transitioning to industry careers"
+description: "Expert resume advice for STEM PhDs transitioning to industry careers. Academic CV conversion, job search strategies, and career guidance for PhD scientists and postdocs."
 baseurl: "" # Empty for custom domain
 url: "https://industryresume.com" # Your custom domain
 author: "IndustryResume Team"
