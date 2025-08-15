@@ -1,0 +1,8 @@
+---
+---
+{%- assign api_key = "12345678901234567890123456789012" -%}
+{
+  "host": "{{ site.url | remove: "https://" | remove: "http://" }}",
+  "key": "{{ api_key }}",
+  "keyLocation": "{{ site.url }}/{{ api_key }}.txt"
+}
