@@ -1,6 +1,6 @@
 ---
 ---
-{%- assign api_key = "12345678901234567890123456789012" -%}
+{%- assign api_key = "a2cd6b36b4704b1b90fbcc4d1ec0d66c" -%}
 {
   "host": "{{ site.url | remove: "https://" | remove: "http://" }}",
   "key": "{{ api_key }}",

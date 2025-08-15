@@ -3,7 +3,7 @@
 # IndexNow Submission Script for IndustryResume
 # Run this script whenever you publish new content
 
-API_KEY="12345678901234567890123456789012"
+API_KEY="a2cd6b36b4704b1b90fbcc4d1ec0d66c"
 HOST="industryresume.com"
 INDEX_NOW_URL="https://api.indexnow.org/indexnow"
 
