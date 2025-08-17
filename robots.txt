@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
+# Block markdown files and development files
+Disallow: /README.md
+Disallow: /*.md$
+Disallow: /.git/
+Disallow: /scripts/
+Disallow: /*.backup
+Disallow: /*.txt.backup
+
+# Allow sitemap
 Sitemap: https://industryresume.com/sitemap.xml
